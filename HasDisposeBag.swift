@@ -15,7 +15,7 @@ fileprivate struct AssociatedKeys {
 }
 
 /// each DisposeBagable offers a unique Rx DisposeBag instance
-public protocol HasDisposeBag {
+public protocol HasDisposeBag: class {
 
     /// a unique Rx DisposeBag instance
     var disposeBag: DisposeBag { get set }
